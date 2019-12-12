@@ -1,12 +1,15 @@
-* {
-    margin: 0;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-image: url("starBackground.jpg");
+    background: rgb(2, 0, 36);
+    background: linear-gradient(160deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
 }
 
 h3,
@@ -19,10 +22,11 @@ header {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     background: rgb(2, 0, 36);
     background: linear-gradient(160deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
     color: white;
+    box-shadow: 0px 0px 40px #FFF;
 }
 
 header img {
@@ -48,21 +52,33 @@ main {
     margin-bottom: 6rem;
 }
 
+#headline {
+    color: white;
+    font-size: 16px;
+    padding: 30vh;
+    text-align: center;
+    transition: 2s;
+}
+
 .charDivs {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     width: 150px;
     padding: 6px;
     box-shadow: 0px 0px 10px black;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(14, 31, 48);
 }
 
 .charDivs p,
 .charDivs h3 {
     color: #FFF;
     text-shadow: 0px 0px 5px #111;
+    display: initial;
+}
+
+.charDivs h3 {
+    margin-top: 10px;
 }
 
 .picDivs {
