@@ -9,6 +9,8 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     transition: all linear 0.5s;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(160deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
 }
 
 canvas {
@@ -66,6 +68,23 @@ main {
     padding: 30vh;
     text-align: center;
     transition: 2s;
+}
+
+.fade_in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .charDivs {
